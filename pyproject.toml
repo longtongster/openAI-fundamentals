@@ -12,6 +12,8 @@ scikit-learn="*"
 matplotlib="*"
 openai="*"
 notebook="*"
+tenacity="*"
+tiktoken="*"
 dvc="*"
 dvc-s3="*"
 
