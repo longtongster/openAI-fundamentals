@@ -12,8 +12,10 @@ scikit-learn="*"
 matplotlib="*"
 openai="*"
 notebook="*"
+# needed for course 3
 tenacity="*"
 tiktoken="*"
+chromadb="*"  # vector database needed for course 4
 dvc="*"
 dvc-s3="*"
 

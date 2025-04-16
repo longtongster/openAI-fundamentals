@@ -174,3 +174,4 @@ cython_debug/
 .pypirc
 
 config.py
+"./04. Introduction to embeddings with the OpenAI API/vector_db/*"
