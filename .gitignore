@@ -177,3 +177,4 @@ config.py
 04. Introduction to embeddings with the OpenAI API/raw_data/
 04. Introduction to embeddings with the OpenAI API/vector_db/*
 06. Project - analysis of clothing reviews with embeddings/*.csv
+06. Project - analysis of clothing reviews with embeddings/chroma/
