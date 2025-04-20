@@ -16,6 +16,18 @@ notebook="*"
 tenacity="*"
 tiktoken="*"
 chromadb="*"  # vector database needed for course 4
+# langchain installs
+langchain="*"
+langchain-openai="*"
+langchain-huggingface="*"
+langchain-community="*"
+langchain-chroma="*"
+langgraph="*"
+pypdf="*"
+unstructured="*"
+
+wikipedia="*"
+ipywidgets="*"
 dvc="*"
 dvc-s3="*"
 
