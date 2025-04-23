@@ -3142,6 +3142,17 @@ files = [
 ]
 
 [[package]]
+name = "json-repair"
+version = "0.39.1"
+description = "A package to repair broken json strings"
+optional = false
+python-versions = ">=3.9"
+files = [
+    {file = "json_repair-0.39.1-py3-none-any.whl", hash = "sha256:3001409a2f319249f13e13d6c622117a5b70ea7e0c6f43864a0233cdffc3a599"},
+    {file = "json_repair-0.39.1.tar.gz", hash = "sha256:e90a489f247e1a8fc86612a5c719872a3dbf9cbaffd6d55f238ec571a77740fa"},
+]
+
+[[package]]
 name = "json5"
 version = "0.12.0"
 description = "A Python implementation of the JSON5 data format."
@@ -3730,6 +3741,23 @@ langchain-core = ">=0.3.15,<0.4.0"
 sentence-transformers = ">=2.6.0"
 tokenizers = ">=0.19.1"
 transformers = ">=4.39.0"
+
+[[package]]
+name = "langchain-neo4j"
+version = "0.4.0"
+description = "An integration package connecting Neo4j and LangChain"
+optional = false
+python-versions = "<4.0,>=3.9"
+files = [
+    {file = "langchain_neo4j-0.4.0-py3-none-any.whl", hash = "sha256:2760b5757e7a402884cf3419830217651df97fe4f44b3fec6c96b14b6d7fd18e"},
+    {file = "langchain_neo4j-0.4.0.tar.gz", hash = "sha256:3f059a66411cec1062a2b8c44953a70d0fff9e123e9fb1d6b3f17a0bef6d6114"},
+]
+
+[package.dependencies]
+langchain = ">=0.3.7,<0.4.0"
+langchain-core = ">=0.3.8,<0.4.0"
+neo4j = ">=5.25.0,<6.0.0"
+neo4j-graphrag = ">=1.5.0,<2.0.0"
 
 [[package]]
 name = "langchain-openai"
@@ -4664,6 +4692,59 @@ traitlets = ">=5.1"
 [package.extras]
 docs = ["myst-parser", "pydata-sphinx-theme", "sphinx", "sphinxcontrib-github-alt", "sphinxcontrib-spelling"]
 test = ["pep440", "pre-commit", "pytest", "testpath"]
+
+[[package]]
+name = "neo4j"
+version = "5.28.1"
+description = "Neo4j Bolt driver for Python"
+optional = false
+python-versions = ">=3.7"
+files = [
+    {file = "neo4j-5.28.1-py3-none-any.whl", hash = "sha256:6755ef9e5f4e14b403aef1138fb6315b120631a0075c138b5ddb2a06b87b09fd"},
+    {file = "neo4j-5.28.1.tar.gz", hash = "sha256:ae8e37a1d895099062c75bc359b2cce62099baac7be768d0eba7180c1298e214"},
+]
+
+[package.dependencies]
+pytz = "*"
+
+[package.extras]
+numpy = ["numpy (>=1.7.0,<3.0.0)"]
+pandas = ["numpy (>=1.7.0,<3.0.0)", "pandas (>=1.1.0,<3.0.0)"]
+pyarrow = ["pyarrow (>=1.0.0)"]
+
+[[package]]
+name = "neo4j-graphrag"
+version = "1.6.1"
+description = "Python package to allow easy integration to Neo4j's GraphRAG features"
+optional = false
+python-versions = "<4.0.0,>=3.9.0"
+files = [
+    {file = "neo4j_graphrag-1.6.1-py3-none-any.whl", hash = "sha256:600a92308ac94a12ac87b085d768027c6f02e1609d252433d97776efe02b756d"},
+    {file = "neo4j_graphrag-1.6.1.tar.gz", hash = "sha256:62862a0780b108445a7a7d307d2014b89bee2b1eab27dd8fe7bb46155f952d97"},
+]
+
+[package.dependencies]
+fsspec = ">=2024.9.0,<2025.0.0"
+json-repair = ">=0.39.1,<0.40.0"
+neo4j = ">=5.17.0,<6.0.0"
+pydantic = ">=2.6.3,<3.0.0"
+pypdf = ">=5.1.0,<6.0.0"
+pyyaml = ">=6.0.2,<7.0.0"
+types-pyyaml = ">=6.0.12.20240917,<7.0.0.0"
+
+[package.extras]
+anthropic = ["anthropic (>=0.49.0,<0.50.0)"]
+cohere = ["cohere (>=5.9.0,<6.0.0)"]
+experimental = ["langchain-text-splitters (>=0.3.0,<0.4.0)", "llama-index (>=0.12.0,<0.13.0)", "pygraphviz (>=1.0.0,<2.0.0)", "pygraphviz (>=1.13.0,<2.0.0)"]
+google = ["google-cloud-aiplatform (>=1.66.0,<2.0.0)"]
+kg-creation-tools = ["pygraphviz (>=1.0.0,<2.0.0)", "pygraphviz (>=1.13.0,<2.0.0)"]
+mistralai = ["mistralai (>=1.0.3,<2.0.0)"]
+ollama = ["ollama (>=0.4.4,<0.5.0)"]
+openai = ["openai (>=1.51.1,<2.0.0)"]
+pinecone = ["pinecone-client (>=4.1.0,<5.0.0)"]
+qdrant = ["qdrant-client (>=1.11.3,<2.0.0)"]
+sentence-transformers = ["sentence-transformers (>=3.0.0,<4.0.0)"]
+weaviate = ["weaviate-client (>=4.6.1,<5.0.0)"]
 
 [[package]]
 name = "nest-asyncio"
@@ -8216,6 +8297,17 @@ files = [
 ]
 
 [[package]]
+name = "types-pyyaml"
+version = "6.0.12.20250402"
+description = "Typing stubs for PyYAML"
+optional = false
+python-versions = ">=3.9"
+files = [
+    {file = "types_pyyaml-6.0.12.20250402-py3-none-any.whl", hash = "sha256:652348fa9e7a203d4b0d21066dfb00760d3cbd5a15ebb7cf8d33c88a49546681"},
+    {file = "types_pyyaml-6.0.12.20250402.tar.gz", hash = "sha256:d7c13c3e6d335b6af4b0122a01ff1d270aba84ab96d1a1a1063ecba3e13ec075"},
+]
+
+[[package]]
 name = "typing-extensions"
 version = "4.13.2"
 description = "Backported and Experimental Type Hints for Python 3.8+"
@@ -9198,4 +9290,4 @@ cffi = ["cffi (>=1.11)"]
 [metadata]
 lock-version = "2.0"
 python-versions = "^3.10"
-content-hash = "e795343195ea6b3c5c56a36a727490f1f0b57719f61a580e0baa922b9e7c48b1"
+content-hash = "c55c63b4829b186e33f6328ac1c9e8f200c46b831074d27fb83797f907ec7635"
