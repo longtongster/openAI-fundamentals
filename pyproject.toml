@@ -30,6 +30,8 @@ pypdf="*"
 unstructured="*"
 markdown="*"
 rank_bm25="*"
+gradio="*"
+pymupdf="*"
 neo4j="*"  # graph database
 
 wikipedia="*"
