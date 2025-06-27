@@ -174,9 +174,9 @@ cython_debug/
 .pypirc
 
 config.py
-04. Introduction to embeddings with the OpenAI API/raw_data/
-04. Introduction to embeddings with the OpenAI API/vector_db/*
-06. Project - analysis of clothing reviews with embeddings/*.csv
-06. Project - analysis of clothing reviews with embeddings/chroma/
-07. Developing LMM Applications with Langchain/chromadb/
+05. Introduction to embeddings with the OpenAI API/raw_data/
+05. Introduction to embeddings with the OpenAI API/vector_db/*
+07. Project - analysis of clothing reviews with embeddings/*.csv
+07. Project - analysis of clothing reviews with embeddings/chroma/
+08. Developing LMM Applications with Langchain/chromadb/
 11. Tutorials/db/
