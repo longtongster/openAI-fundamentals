@@ -38,6 +38,7 @@ wikipedia="*"
 ipywidgets="*"
 dvc="*"
 dvc-s3="*"
+termcolor = "^3.1.0"
 
 [tool.poetry.group.dev.dependencies]
 pytest = "*"
