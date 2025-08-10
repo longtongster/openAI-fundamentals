@@ -39,6 +39,7 @@ ipywidgets="*"
 dvc="*"
 dvc-s3="*"
 termcolor = "^3.1.0"
+pdfplumber = "^0.11.7"
 
 [tool.poetry.group.dev.dependencies]
 pytest = "*"
