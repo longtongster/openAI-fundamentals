@@ -40,6 +40,9 @@ dvc="*"
 dvc-s3="*"
 termcolor = "^3.1.0"
 pdfplumber = "^0.11.7"
+langchain-core = "^0.3.74"
+langgraph-swarm = "^0.0.14"
+langgraph-supervisor = "^0.0.29"
 
 [tool.poetry.group.dev.dependencies]
 pytest = "*"
