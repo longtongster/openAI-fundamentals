@@ -44,8 +44,8 @@ langchain-core = "^0.3.74"
 langgraph-swarm = "^0.0.14"
 langgraph-supervisor = "^0.0.29"
 
-crewai="*"
-crewai_tools="*"
+crewai="^0.75"
+crewai_tools="^0.13"
 
 [tool.poetry.group.dev.dependencies]
 pytest = "*"
