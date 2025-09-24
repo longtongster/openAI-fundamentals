@@ -44,8 +44,15 @@ langchain-core = "^0.3.74"
 langgraph-swarm = "^0.0.14"
 langgraph-supervisor = "^0.0.29"
 
-crewai="^0.75"
-crewai_tools="^0.13"
+crewai="^0.186.1"
+crewai_tools="^0.71.0"
+docarray = "^0.41.0"
+langchain-tavily = "^0.2.11"
+tavily-python = "^0.7.11"
+ddgs = "^9.5.5"
+langgraph-checkpoint-sqlite = "^2.0.11"
+email-validator = "^2.3.0"
+pydantic-ai = "^1.0.6"
 
 [tool.poetry.group.dev.dependencies]
 pytest = "*"
