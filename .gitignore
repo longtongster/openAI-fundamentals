@@ -180,3 +180,10 @@ config.py
 07. Project - analysis of clothing reviews with embeddings/chroma/
 08. Developing LMM Applications with Langchain/chromadb/
 11. Tutorials/db/
+# ChromaDB files
+**/chroma/
+**/chromadb/
+**/*.bin
+*.archive
+# Large data files
+**/*data_level0.bin
